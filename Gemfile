@@ -34,6 +34,8 @@ gem 'acts-as-taggable-on'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem "resque"
+gem 'unicorn'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'carrierwave', '~> 1.0'
