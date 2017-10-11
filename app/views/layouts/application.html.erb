@@ -381,7 +381,7 @@
 
 
       <aside class="note-wrap note-yellow">
-        <%if Note.where(:user_id => current_user.id).length>0%>
+        <%if Note.where(:user_id => current_user.id) != nil %>
         <div style=" height: 50%; border-bottom: 1px solid #bcb1b1;">
         <p id="note1"><%= Note.where(:user_id => current_user.id).last.title.truncate(20) %></p>
             <p id="note1cont"><%= Note.where(:user_id => current_user.id).last.content.truncate(110) %></p>
