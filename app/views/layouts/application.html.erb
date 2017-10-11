@@ -382,16 +382,16 @@
 
       <aside class="note-wrap note-yellow">
         <%if Note.where(:user_id => current_user.id).length>0%>
-        <div style=" height: 50%; border-bottom: 2px solid black;">
-        <p style=""><%= Note.where(:user_id => current_user.id).last.title.truncate(20) %></p>
-            <p><%= Note.where(:user_id => current_user.id).last.content.truncate(70) %></p>
+        <div style=" height: 50%; border-bottom: 1px solid #bcb1b1;">
+        <p id="note1"><%= Note.where(:user_id => current_user.id).last.title.truncate(20) %></p>
+            <p id="note1cont"><%= Note.where(:user_id => current_user.id).last.content.truncate(110) %></p>
         </div>
       <%end%>
         <%if Note.where(:user_id => current_user.id).length>=2%>
         <div style=" height: 50%;">
-        <p><%= Note.where(:user_id => current_user.id)[-2].title.truncate(20) %>
+        <p id="note1"><%= Note.where(:user_id => current_user.id)[-2].title.truncate(20) %>
         </p>
-        <p><%= Note.where(:user_id => current_user.id)[-2].content.truncate(70) %>
+       <p id="note1cont"><%= Note.where(:user_id => current_user.id)[-2].content.truncate(110) %>
         </p></div>
         <%end%>
         
@@ -453,6 +453,7 @@
   <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
 </div> -->
 </div>
+
 
 </div>
 
@@ -567,6 +568,19 @@ $('#modaladdnote').modal({
 $('#modaladdnote').modal('open');
 
 $('#modaladdnote').modal('close');
+ $('#modaleachnote').on('click', function() {
+      });
+$('#modaleachnote').modal({
+   dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: 0.2, // Opacity of modal background
+      inDuration: 300, // Transition in duration
+      outDuration: 200, // Transition out duration
+      startingTop: '4%', // Starting top style attribute
+      endingTop: '10%', // Ending top style attribute
+      
+});
+
+
 $('#modalshownote').modal({
   dismissible: true, // Modal can be dismissed by clicking outside of the modal
       opacity: 0.2, // Opacity of modal background

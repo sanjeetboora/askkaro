@@ -319,19 +319,19 @@ margin-left: 12px;
 
 /* Note styles */
 .car1.small.note .note-wrap {
+  font-size: 24px;
+font-family: Englebert, Arial;
+color: #777471;
+line-height: 28px;
+text-align: center;
   width: 235px;
   min-height: 235px;
-  padding: 7px;
+  padding: 11px;
   margin: 0 22px 44px 22px;
   position: relative;
-  font-size: 24px;
   vertical-align: top;
   display: inline-block;
-  font-family: Englebert, Arial;
-  color: #4b453c;
   background: #F7E999;
-  line-height: 34px;
-  text-align: center;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   height: 425px;
 }
@@ -370,8 +370,18 @@ margin-left: 12px;
   -ms-transform: rotate(-2deg);
   transform: rotate(-2deg);
 }
+aside.note-wrap.note-yellow div p#note1{
+text-transform: uppercase;
+margin: 0px;
+margin-top: 10px;
+font-weight: bold;
+font-family: 'Lato, sans-serif';
+}
+aside.note-wrap.note-yellow div p#note1cont{
 
-
+margin: 0px;
+margin-top: 4px;    
+}
 
 
 .card-image{
@@ -395,6 +405,20 @@ margin-left: 12px;
   z-index: 8000;
 }
 
+div.card.small.tag div.card-action.center a.waves-effect.waves-light.cyan.btn.modal-trigger{
+
+border-radius: 4%;
+height: 30px;
+line-height: 30px;
+padding: 0 0.5rem;
+}
+
+div.card.small.userf div.card-action.center a.waves-effect.waves-light.cyan.btn.modal-trigger{
+border-radius: 4%;
+height: 30px;
+line-height: 30px;
+padding: 0 0.5rem;
+}
 
   /*.card.small.note:hover {
 
