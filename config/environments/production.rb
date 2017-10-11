@@ -13,7 +13,7 @@ Rails.application.configure do
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
-config.action_mailer.raise_delivery_errors = false
+config.action_mailer.raise_delivery_errors = true
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
   # For large-scale production use, consider using a caching reverse proxy like
@@ -22,7 +22,7 @@ config.action_mailer.raise_delivery_errors = false
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
-  config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
+  config.serve_static_files = true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -30,7 +30,8 @@ config.action_mailer.raise_delivery_errors = false
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
-
+  config.assets.precompile =  ['*.js', '*.css', '*.css.erb','*.js.erb'] 
+  
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
   config.assets.digest = true
@@ -63,7 +64,7 @@ config.action_mailer.raise_delivery_errors = false
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
-
+  config.action_mailer.perform_deliveries = true
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
@@ -76,14 +77,15 @@ config.action_mailer.raise_delivery_errors = false
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-   config.action_mailer.default_url_options = { host: '13.126.16.219', port: 3000 }
-  config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                 587,
-    domain:               'gmail.com',
-    user_name:            'helpermail41@gmail.com',
-    password:             'sanketpglet',
-    authentication:       :plain,
-    enable_starttls_auto: true
-  }
-end
+  config.action_mailer.default_url_options = { host: '13.126.16.219'}
+   config.action_mailer.smtp_settings = {
+  :user_name => 'apikey',
+  :password => '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',
+  :domain => 'askkaro.com',
+  :address => 'smtp.sendgrid.net',
+  :port => 587,
+  :authentication => :plain,
+  :enable_starttls_auto => true
+}
+
+end 
