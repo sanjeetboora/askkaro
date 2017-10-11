@@ -382,10 +382,19 @@
 
       <aside class="note-wrap note-yellow">
         <%if Note.where(:user_id => current_user.id).length>0%>
-        <p class="truncate">  <%= Note.where(:user_id => current_user.id).last.content %></p><%end%>
-        <hr><%if Note.where(:user_id => current_user.id).length>=2%>
-        <p class="truncate"><%= Note.where(:user_id => current_user.id)[-2].content %><%end%>
+        <div style=" height: 50%; border-bottom: 2px solid black;">
+        <p style=""><%= Note.where(:user_id => current_user.id).last.title.truncate(20) %></p>
+            <p><%= Note.where(:user_id => current_user.id).last.content.truncate(70) %></p>
+        </div>
+      <%end%>
+        <%if Note.where(:user_id => current_user.id).length>=2%>
+        <div style=" height: 50%;">
+        <p><%= Note.where(:user_id => current_user.id)[-2].title.truncate(20) %>
         </p>
+        <p><%= Note.where(:user_id => current_user.id)[-2].content.truncate(70) %>
+        </p></div>
+        <%end%>
+        
 
         <br>
 
@@ -512,31 +521,79 @@
    }
    );
 // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-$('.modal').modal();
+
  $('#modal2').on('click', function() {
       });
-$('#modal7').modal();
+ $('#modal2').modal({
+  dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: 0.2, // Opacity of modal background
+      inDuration: 300, // Transition in duration
+      outDuration: 200, // Transition out duration
+      startingTop: '4%', // Starting top style attribute
+      endingTop: '10%', // Ending top style attribute
+});
+$('#modal7').modal({
+  dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: 0.2, // Opacity of modal background
+      inDuration: 300, // Transition in duration
+      outDuration: 200, // Transition out duration
+      startingTop: '4%', // Starting top style attribute
+      endingTop: '10%', // Ending top style attribute
+});
 $('#modal7').modal('open');
 $('.trigger-modal').modal();
 $('#modal7').modal('close');
-$('#modaltag').modal();
+$('#modaltag').modal({
+   dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: 0.2, // Opacity of modal background
+      inDuration: 300, // Transition in duration
+      outDuration: 200, // Transition out duration
+      startingTop: '4%', // Starting top style attribute
+      endingTop: '10%', // Ending top style attribute
+      
+});
 $('#modaltag').modal('open');
 
 $('#modaltag').modal('close');
-$('#modaladdnote').modal();
+$('#modaladdnote').modal({
+   dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: 0.2, // Opacity of modal background
+      inDuration: 300, // Transition in duration
+      outDuration: 200, // Transition out duration
+      startingTop: '4%', // Starting top style attribute
+      endingTop: '10%', // Ending top style attribute
+      
+});
 $('#modaladdnote').modal('open');
 
 $('#modaladdnote').modal('close');
-$('#modalshownote').modal();
+$('#modalshownote').modal({
+  dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: 0.2, // Opacity of modal background
+      inDuration: 300, // Transition in duration
+      outDuration: 200, // Transition out duration
+      startingTop: '4%', // Starting top style attribute
+      endingTop: '10%', // Ending top style attribute
+});
 $('#modalshownote').modal('open');
 
 $('#modalshownote').modal('close');
 
 $('.tooltipped').tooltip({delay: 50});
 
-
 });
 
+
+  $('.modal').modal({
+      dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: 0.2, // Opacity of modal background
+      inDuration: 300, // Transition in duration
+      outDuration: 200, // Transition out duration
+      startingTop: '4%', // Starting top style attribute
+      endingTop: '10%', // Ending top style attribute
+      
+    }
+  );
 
 </script>
 
