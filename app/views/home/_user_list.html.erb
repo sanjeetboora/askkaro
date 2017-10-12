@@ -8,9 +8,9 @@
     
 
       <% if user.follow_string(current_user.id,user.id)== true%>
-             <%= link_to('Unfollow', user_follow_path(user), remote:true,method: :post,id: "follow_#{user.id}") %>
+             <%= link_to('Unfollow', user_follow_path(user), remote:true,method: :post,class: "follow1_#{user.id}") %>
              <%else%>
-             <%= link_to('follow', user_follow_path(user), remote:true,method: :post,id: "follow_#{user.id}") %>
+             <%= link_to('follow', user_follow_path(user), remote:true,method: :post,class: "follow1_#{user.id}") %>
              <%end%>
       <a href="#"> <i class="ion-social-twitter"></i></a>
       <a href="#"> <i class="ion-social-vimeo"></i></a>

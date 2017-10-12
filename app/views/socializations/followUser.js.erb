@@ -1,12 +1,12 @@
 
 <% if @is_followed %>
-$('#follow_<%= @user.id%>').html("UnFollow");
+$('.follow1_<%= @user.id%>').html("UnFollow");
 
 noty({text: 'User was Followed', type: 'success', timeout: 3500, progressBar: true});
 
 <% else %>
 
-$('#follow_<%= @user.id%>').html("Follow");
+$('.follow1_<%= @user.id%>').html("Follow");
 
 noty({text: 'User was UnFollowed', type: 'success', timeout: 3500, progressBar: true});
 
