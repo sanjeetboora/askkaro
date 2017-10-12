@@ -15,15 +15,12 @@
  */
 
 
-
+@charset "UTF-8";
  body{
   background-color: #E6ECF0;
-
-  /*background-color: #D8D8D8;*/
-
 }
 
-@charset "UTF-8";
+
 .navigation {
   height: 70px;
   background: #FAFAFB;
@@ -48,7 +45,7 @@
 .brand a .image-logo1{
   background: url("re3logo1.jpg") no-repeat 9px 0px;
   height: 70px;
-  margin-left: 0px;
+  margin-left: 0;
   margin-top: 6px;
   width: 70px;
   
@@ -252,7 +249,7 @@ margin-left: 12px;
 #tag_cloud .chip{
   font-family: 'Capriola, sans-serif';font-size: 12px;
   /*font-family: "DejaVu Sans",Verdana, Tahoma, Arial, sans-serif;*/
-  font-weight: 450;
+  font-weight: 400;
   font-size: inherit;
   line-height: 28px;
   border: 1px solid #00b8d4;
@@ -274,12 +271,12 @@ margin-left: 12px;
 }
 #tag_cloud .chip a{
   font-family: "DejaVu Sans",Verdana, Tahoma, Arial, sans-serif;
-  font-weight: 450;
+  font-weight: 400;
   color:#00b8d4;
 }
 #tag_cloud .chip a:hover{
   font-family: "DejaVu Sans",Verdana, Tahoma, Arial, sans-serif;
-  font-weight: 450;
+  font-weight: 400;
   color:#ffffff;
 }
 
@@ -313,7 +310,7 @@ margin-left: 12px;
 
 
 .car1.small.note .wrapper {
-  font-family:sans;
+  font-family: sans;
   margin: auto 0 auto;
 }
 
