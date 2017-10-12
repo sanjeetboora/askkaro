@@ -341,9 +341,9 @@
             <div class="chip">
              <!--          <i class="material-icons tagicon">add</i> -->
              <% if user.follow_string(current_user.id,user.id)== true%>
-             <%= link_to('Unfollow', user_follow_path(user), remote:true,method: :post,id: "follow_#{user.id}") %>
+             <%= link_to('Unfollow', user_follow_path(user), remote:true,method: :post,class: "follow1_#{user.id}") %>
              <%else%>
-             <%= link_to('follow', user_follow_path(user), remote:true,method: :post,id: "follow_#{user.id}") %>
+             <%= link_to('follow', user_follow_path(user), remote:true,method: :post,class: "follow1_#{user.id}") %>
              <%end%>
 
            </div>
@@ -381,7 +381,7 @@
 
 
       <aside class="note-wrap note-yellow">
-        <%if Note.where(:user_id => current_user.id) != nil %>
+        <%if Note.where(:user_id => current_user.id).length>0%>
         <div style=" height: 50%; border-bottom: 1px solid #bcb1b1;">
         <p id="note1"><%= Note.where(:user_id => current_user.id).last.title.truncate(20) %></p>
             <p id="note1cont"><%= Note.where(:user_id => current_user.id).last.content.truncate(110) %></p>
