@@ -35,3 +35,49 @@ E, [2017-10-10T18:17:58.462855 #13616] ERROR -- : old PID:11923 running with exi
 E, [2017-10-10T18:23:27.487100 #13616] ERROR -- : old PID:11923 running with existing pid=/home/ubuntu/askkaro/shared/pids/unicorn.pid.oldbin, refusing rexec
 E, [2017-10-10T20:05:59.501184 #13616] ERROR -- : old PID:11923 running with existing pid=/home/ubuntu/askkaro/shared/pids/unicorn.pid.oldbin, refusing rexec
 E, [2017-10-10T20:11:27.236546 #13616] ERROR -- : old PID:11923 running with existing pid=/home/ubuntu/askkaro/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2017-10-11T18:34:14.213077 #13616] ERROR -- : old PID:11923 running with existing pid=/home/ubuntu/askkaro/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2017-10-11T18:44:34.750749 #13616] ERROR -- : old PID:11923 running with existing pid=/home/ubuntu/askkaro/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2017-10-11T18:48:40.772210 #13616] ERROR -- : old PID:11923 running with existing pid=/home/ubuntu/askkaro/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2017-10-11T18:58:16.269062 #13616] ERROR -- : old PID:11923 running with existing pid=/home/ubuntu/askkaro/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2017-10-11T19:16:47.869073 #13616] ERROR -- : worker=1 PID:13622 timeout (31s > 30s), killing
+E, [2017-10-11T19:16:49.050778 #13616] ERROR -- : reaped #<Process::Status: pid 13622 SIGKILL (signal 9)> worker=1
+I, [2017-10-11T19:16:49.085244 #13616]  INFO -- : worker=1 spawning...
+I, [2017-10-11T19:16:49.179038 #29748]  INFO -- : worker=1 spawned pid=29748
+I, [2017-10-11T19:16:49.179213 #29748]  INFO -- : worker=1 ready
+E, [2017-10-11T19:16:56.244483 #13616] ERROR -- : old PID:11923 running with existing pid=/home/ubuntu/askkaro/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2017-10-11T19:22:45.525714 #13616] ERROR -- : old PID:11923 running with existing pid=/home/ubuntu/askkaro/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2017-10-11T19:24:00.343138 #13616] ERROR -- : old PID:11923 running with existing pid=/home/ubuntu/askkaro/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2017-10-11T19:24:53.494330 #13616] ERROR -- : old PID:11923 running with existing pid=/home/ubuntu/askkaro/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2017-10-11T19:25:25.068665 #13616] ERROR -- : old PID:11923 running with existing pid=/home/ubuntu/askkaro/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2017-10-11T19:26:24.830384 #13616] ERROR -- : old PID:11923 running with existing pid=/home/ubuntu/askkaro/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2017-10-11T19:28:05.274555 #13616] ERROR -- : old PID:11923 running with existing pid=/home/ubuntu/askkaro/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2017-10-11T19:28:39.308321 #13616] ERROR -- : old PID:11923 running with existing pid=/home/ubuntu/askkaro/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2017-10-11T19:30:27.349779 #13616] ERROR -- : old PID:11923 running with existing pid=/home/ubuntu/askkaro/shared/pids/unicorn.pid.oldbin, refusing rexec
+I, [2017-10-11T19:42:33.110459 #13616]  INFO -- : reaped #<Process::Status: pid 13620 exit 0> worker=0
+I, [2017-10-11T19:42:33.111063 #13616]  INFO -- : reaped #<Process::Status: pid 29748 exit 0> worker=1
+I, [2017-10-11T19:42:33.111140 #13616]  INFO -- : master complete
+E, [2017-10-11T19:42:33.134997 #11923] ERROR -- : reaped #<Process::Status: pid 13616 exit 0> exec()-ed
+I, [2017-10-11T19:43:19.459634 #11923]  INFO -- : reaped #<Process::Status: pid 11926 exit 0> worker=0
+I, [2017-10-11T19:43:19.459718 #11923]  INFO -- : reaped #<Process::Status: pid 11929 exit 0> worker=1
+I, [2017-10-11T19:43:19.459764 #11923]  INFO -- : master complete
+I, [2017-10-11T19:43:35.525773 #30663]  INFO -- : Refreshing Gem list
+I, [2017-10-11T19:43:37.855342 #30663]  INFO -- : unlinking existing socket=/home/ubuntu/askkaro/shared/sockets/unicorn.sock
+I, [2017-10-11T19:43:37.856183 #30663]  INFO -- : listening on addr=/home/ubuntu/askkaro/shared/sockets/unicorn.sock fd=11
+I, [2017-10-11T19:43:37.856270 #30663]  INFO -- : worker=0 spawning...
+I, [2017-10-11T19:43:37.857711 #30663]  INFO -- : worker=1 spawning...
+I, [2017-10-11T19:43:37.858363 #30666]  INFO -- : worker=0 spawned pid=30666
+I, [2017-10-11T19:43:37.858517 #30666]  INFO -- : worker=0 ready
+I, [2017-10-11T19:43:37.859461 #30663]  INFO -- : master process ready
+I, [2017-10-11T19:43:37.863578 #30669]  INFO -- : worker=1 spawned pid=30669
+I, [2017-10-11T19:43:37.863706 #30669]  INFO -- : worker=1 ready
+I, [2017-10-11T19:46:56.009417 #30724]  INFO -- : executing ["/home/ubuntu/.rbenv/versions/2.4.1/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {11=>#<Kgio::UNIXServer:/home/ubuntu/askkaro/shared/sockets/unicorn.sock>}] (in /home/ubuntu/askkaro)
+I, [2017-10-11T19:46:56.009570 #30724]  INFO -- : forked child re-executing...
+I, [2017-10-11T19:46:56.191933 #30724]  INFO -- : inherited addr=/home/ubuntu/askkaro/shared/sockets/unicorn.sock fd=11
+I, [2017-10-11T19:46:56.192124 #30724]  INFO -- : Refreshing Gem list
+I, [2017-10-11T19:46:58.450894 #30724]  INFO -- : worker=0 spawning...
+I, [2017-10-11T19:46:58.452222 #30724]  INFO -- : worker=1 spawning...
+I, [2017-10-11T19:46:58.452964 #30728]  INFO -- : worker=0 spawned pid=30728
+I, [2017-10-11T19:46:58.453107 #30728]  INFO -- : worker=0 ready
+I, [2017-10-11T19:46:58.454147 #30724]  INFO -- : master process ready
+I, [2017-10-11T19:46:58.454813 #30731]  INFO -- : worker=1 spawned pid=30731
+I, [2017-10-11T19:46:58.454932 #30731]  INFO -- : worker=1 ready
