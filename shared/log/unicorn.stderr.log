@@ -207,3 +207,29 @@ I, [2017-10-12T21:35:46.945301 #7380]  INFO -- : worker=0 ready
 I, [2017-10-12T21:35:46.946300 #7377]  INFO -- : master process ready
 I, [2017-10-12T21:35:46.951373 #7383]  INFO -- : worker=1 spawned pid=7383
 I, [2017-10-12T21:35:46.951514 #7383]  INFO -- : worker=1 ready
+I, [2017-10-13T09:53:25.462150 #7377]  INFO -- : reaped #<Process::Status: pid 7380 exit 0> worker=0
+I, [2017-10-13T09:53:25.462244 #7377]  INFO -- : reaped #<Process::Status: pid 7383 exit 0> worker=1
+I, [2017-10-13T09:53:25.462307 #7377]  INFO -- : master complete
+I, [2017-10-13T09:53:43.463165 #16969]  INFO -- : Refreshing Gem list
+I, [2017-10-13T09:53:45.784689 #16969]  INFO -- : unlinking existing socket=/home/ubuntu/askkaro/shared/sockets/unicorn.sock
+I, [2017-10-13T09:53:45.784844 #16969]  INFO -- : listening on addr=/home/ubuntu/askkaro/shared/sockets/unicorn.sock fd=11
+I, [2017-10-13T09:53:45.784939 #16969]  INFO -- : worker=0 spawning...
+I, [2017-10-13T09:53:45.786398 #16969]  INFO -- : worker=1 spawning...
+I, [2017-10-13T09:53:45.787235 #16969]  INFO -- : master process ready
+I, [2017-10-13T09:53:45.792456 #16973]  INFO -- : worker=0 spawned pid=16973
+I, [2017-10-13T09:53:45.792608 #16973]  INFO -- : worker=0 ready
+I, [2017-10-13T09:53:45.793263 #16975]  INFO -- : worker=1 spawned pid=16975
+I, [2017-10-13T09:53:45.793397 #16975]  INFO -- : worker=1 ready
+I, [2017-10-13T10:04:15.290894 #16969]  INFO -- : reaped #<Process::Status: pid 16973 exit 0> worker=0
+I, [2017-10-13T10:04:15.290984 #16969]  INFO -- : reaped #<Process::Status: pid 16975 exit 0> worker=1
+I, [2017-10-13T10:04:15.291034 #16969]  INFO -- : master complete
+I, [2017-10-13T10:04:50.582398 #17359]  INFO -- : Refreshing Gem list
+I, [2017-10-13T10:04:52.879474 #17359]  INFO -- : unlinking existing socket=/home/ubuntu/askkaro/shared/sockets/unicorn.sock
+I, [2017-10-13T10:04:52.879635 #17359]  INFO -- : listening on addr=/home/ubuntu/askkaro/shared/sockets/unicorn.sock fd=11
+I, [2017-10-13T10:04:52.879737 #17359]  INFO -- : worker=0 spawning...
+I, [2017-10-13T10:04:52.881181 #17359]  INFO -- : worker=1 spawning...
+I, [2017-10-13T10:04:52.882336 #17359]  INFO -- : master process ready
+I, [2017-10-13T10:04:52.887254 #17362]  INFO -- : worker=0 spawned pid=17362
+I, [2017-10-13T10:04:52.887399 #17362]  INFO -- : worker=0 ready
+I, [2017-10-13T10:04:52.888048 #17365]  INFO -- : worker=1 spawned pid=17365
+I, [2017-10-13T10:04:52.888172 #17365]  INFO -- : worker=1 ready
