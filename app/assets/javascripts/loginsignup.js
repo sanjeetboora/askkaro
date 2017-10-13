@@ -1,11 +1,5 @@
 $(document).ready(function(){
-    $('.signup-slider').slick({
-        dots: true,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 2000
-    });
-
+ 
     $("img").height($(".main-box").height());
 
     $(".to-signin").on("click", function () {
