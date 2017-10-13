@@ -19,7 +19,6 @@ class UsersController < ApplicationController
     end
   end
   def update
-     byebug
     if @user.update(user_params)
 
       redirect_to @user
