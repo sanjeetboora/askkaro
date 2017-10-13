@@ -19,9 +19,8 @@ class UsersController < ApplicationController
     end
   end
   def update
-     byebug
     if @user.update(user_params)
-
+      byebug
       redirect_to @user
     else
       flash.now[:alert]="Something went wrong Please try again"
