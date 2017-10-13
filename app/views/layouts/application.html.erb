@@ -74,7 +74,6 @@ margin-top: 3%;
     letter-spacing: 1.5px;
   }
   .search-wrapper .search-icon {
-     background:  url("#,<svg width="13px" height="13px" class="search-icon" viewBox="0 0 13 13"><path fill="#999999" d="M12,13a1,1,0,0,1-.7-.3L8.62,10A5.5,5.5,0,1,1,10,8.62l2.68,2.68A1,1,0,0,1,12,13ZM5.5,2A3.5,3.5,0,1,0,9,5.5,3.5,3.5,0,0,0,5.5,2Z"/></svg>");
     position: absolute;
     top: 28px;
     right: calc(5% + 18px);
@@ -100,8 +99,9 @@ margin-top: 3%;
             <!-- <input class="search-input" placeholder="SEARCH" type="text" /> -->
 
             <%= search_field_tag :search, params[:search],:class=>'search-input',:id=>'search',:placeholder=>'Search' %>
-            <%= submit_tag("<svg width="13px" height="13px" class="search-icon" viewBox="0 0 13 13"><path fill="#999999" d="M12,13a1,1,0,0,1-.7-.3L8.62,10A5.5,5.5,0,1,1,10,8.62l2.68,2.68A1,1,0,0,1,12,13ZM5.5,2A3.5,3.5,0,1,0,9,5.5,3.5,3.5,0,0,0,5.5,2Z"/></svg>".html_safe, :class=>"search-icon", :name=>"submit") %>
-           
+             <svg width="13px" height="13px" class="search-icon" viewBox="0 0 13 13">
+              <path fill="#999999" d="M12,13a1,1,0,0,1-.7-.3L8.62,10A5.5,5.5,0,1,1,10,8.62l2.68,2.68A1,1,0,0,1,12,13ZM5.5,2A3.5,3.5,0,1,0,9,5.5,3.5,3.5,0,0,0,5.5,2Z"/>
+</svg>
              <i class="material-icons">close</i>
           </form>
 
@@ -645,9 +645,6 @@ $('.tooltipped').tooltip({delay: 50});
   $.ajax({
     url: '/notifications.json',
     success: function(data){
-      console.log("****");
-      console.log(data[1].notifiable.type);
-      console.log("****");
       var result=data;
       var notificationList=document.getElementById('dropdownnoty');
       for(var i=0;i<data.length;i++){
