@@ -35,7 +35,6 @@ Rails.application.routes.draw do
   end
   resources :users do
     post 'follow', to: 'socializations#followUser'
-  
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

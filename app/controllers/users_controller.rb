@@ -20,7 +20,6 @@ class UsersController < ApplicationController
   end
   def update
     if @user.update(user_params)
-  
       redirect_to @user
     else
       flash.now[:alert]="Something went wrong Please try again"
@@ -42,6 +41,6 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:name,:bio,:avatar)
+     params.require(:user).permit(:name,:bio,:avatar)
   end
 end

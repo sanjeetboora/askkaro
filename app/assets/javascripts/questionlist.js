@@ -1,3 +1,4 @@
+
 $('button').click(function(){
   if ($(this).children('i').text() === "favorite_border") {
     $(this).children('i').text('favorite');

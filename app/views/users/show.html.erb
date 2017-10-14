@@ -167,7 +167,7 @@ background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, 
 
           <div class="col l3 s12"><%= avatar_for(@user,size: 25) %></div>
           <!-- <div class="col l3 s12"><img src="http://images.contactmusic.com/newsimages/david_beckham_1133321.jpg" alt=""></div> -->
-          <div class="col l8 s12 desc"><h3><%= @user.name %></h3>
+          <div class="col l8 s12 desc">    <h3><%= @user.name %></h3>
            <!--  <span class="spanfollow">Follow</span> -->
             <p><%= @user.bio %></p>
           </div>
@@ -176,10 +176,11 @@ background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, 
         <div class="col l6 s12 second">
           <div class="row rowtwo">
             <div class="col l4 s4 one">
-              <h1><%= @user.followees(User).count %></h1>
+                <h1><%= @user.followees(User).count %></h1>
               <span>Following</span>
             </div>
-            <div class="col l4 s4 two"><h1><%= @user.followers(User).count %></h1>
+            <div class="col l4 s4 two">
+            <h1><%= @user.followers(User).count %></h1>
               <span>Followers</span></div>
             <div class="col l3 s4 three"><h1><%= @user.questions.count %></h1>
               <span>Questions</span>
@@ -241,7 +242,6 @@ background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, 
               </div>
               <div class="card-action" style="background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);">
                 <%= link_to 'Show', a ,params[id: a.id]%>
-                
                 <div class="right">
                   <%if can? :update,a%>
                       <%= link_to ('<i class="material-icons right">create</i>').html_safe, edit_answer_path(a) %>
@@ -259,9 +259,9 @@ background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, 
 
     </div>
     <div id="follow-swipe-3" class="col s12 green">
-      <%@user.followers(User).each do |f|%>
-          <%= f.name%>
-      <%end%>
+       <%@user.followers(User).each do |f|%>
+         <%= f.name%>
+       <%end%>
     </div>
     <div id="profile-swipe-4" class="col s12">
       <%= render :partial => 'users/edit'%>

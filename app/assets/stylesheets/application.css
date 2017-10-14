@@ -15,12 +15,9 @@
  */
 
 
- @charset "UTF-8";
+@charset "UTF-8";
  body{
   background-color: #E6ECF0;
-  width: 100vw;
-  height: 100vh;
-  margin: auto;
 }
 
 
@@ -47,10 +44,20 @@
 
 .brand a .image-logo1{
   background: url("re3logo1.jpg") no-repeat 9px 0px;
+    display: inline-block;
   height: 70px;
   margin-left: 0;
   margin-top: 6px;
   width: 70px;
+  
+}
+.brand a .image-name1{
+  background: url("askname21.jpg") no-repeat 9px 0px;
+display: inline-block;
+height: 55px;
+margin-left: 0px;
+margin-top: 6px;
+width: 170px;
   
 }
 .nav-container {
@@ -135,12 +142,12 @@ nav#small-device-nav {
 
 
 html body div#mithu.container div.col.s12.m12.l4.left.taguser{
- height: 595px;
-width: 22%;
-margin-top: 6%;
-padding-left: 15px;
-margin-left: -12%;
-margin-right: 10%;
+height: 595px;
+  width: 22%;
+  margin-top: 53px;
+  padding-left: 15px;
+  margin-left: -35px;
+  margin-right: 35px;
 }
 .card.small.userf {
   height: 595px;
@@ -165,123 +172,123 @@ margin-right: 10%;
 }
 
 #user_cloud  div.userfollow{
-  padding: 5px 0px;
+padding: 5px 0px;
   border-bottom: 1px solid #e6ecf0;
 
 }
 
-#user_cloud div.userfollow figure {
-  width: 40px;
-  height: 40px;
-  margin: 0 16px 0 0;
-  padding: 0;
-  border-radius: 50%;
-  float: left;
-}
+  #user_cloud div.userfollow figure {
+      width: 40px;
+      height: 40px;
+        margin: 0 16px 0 0;
+      padding: 0;
+      border-radius: 50%;
+      float: left;
+    }
    /* #user_cloud div.userfollow  div.usertext{
       margin-top: 2px;
       margin-bottom: 2px;
-      }*/
-      #user_cloud div.userfollow  div.usertext h5{
-        font-size: 24px;
-        font-weight: normal;
-        line-height: 1;
-        padding: 0;
-        margin: 4px;
-        margin-left: 62px;
-      }
-      
-      #user_cloud .chip{
-        font-family: "DejaVu Sans",Verdana, Tahoma, Arial, sans-serif;
-        display: inline-block;
-        height: 26px;
-        font-size: 13px;
-        font-weight: 500;
-        color: rgba(0,0,0,0.6);
-        line-height: 25px;
-        padding: 0 15px;
-        border-radius: 16px;
-        background-color: #ffffff;
-        margin-bottom: 5px;
-        margin-right: 5px;
-        margin-left: 12px;
-        border: 1px solid #039BE5;
-      }
-      #user_cloud .chip:hover{
-       background-color: #039BE5;
-       color: #ffffff;
-       z-index: 8000;
-       /*  background-color: #e0f7fa ;*/
-
-     }
-
-     #user_cloud .chip a:hover{
-      font-family: "DejaVu Sans",Verdana, Tahoma, Arial, sans-serif;
-
-      color:#ffffff;
+    }*/
+     #user_cloud div.userfollow  div.usertext h5{
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 1;
+      padding: 0;
+      margin: 4px;
+      margin-left: 62px;
     }
+    
+#user_cloud .chip{
+  font-family: "DejaVu Sans",Verdana, Tahoma, Arial, sans-serif;
+  display: inline-block;
+height: 26px;
+font-size: 13px;
+font-weight: 500;
+color: rgba(0,0,0,0.6);
+line-height: 25px;
+padding: 0 15px;
+border-radius: 16px;
+background-color: #ffffff;
+margin-bottom: 5px;
+margin-right: 5px;
+margin-left: 12px;
+  border: 1px solid #039BE5;
+}
+#user_cloud .chip:hover{
+ background-color: #039BE5;
+ color: #ffffff;
+ z-index: 8000;
+ /*  background-color: #e0f7fa ;*/
+
+}
+
+#user_cloud .chip a:hover{
+  font-family: "DejaVu Sans",Verdana, Tahoma, Arial, sans-serif;
+
+  color:#ffffff;
+}
 
 
 
 
-    .card.small.tag {
-      height: 595px;
-      width: 297px;
-      margin-top: 43px;
-      padding-left: 15px;
-      margin-left: -35px;
-      margin-right: 35px;
-    }
+.card.small.tag {
+  height: 595px;
+  width: 297px;
+  margin-top: 43px;
+  padding-left: 15px;
+  margin-left: -35px;
+  margin-right: 35px;
+}
 
-    .card.small.tag:hover {
+.card.small.tag:hover {
 
-      box-shadow: 0 12px 12px rgba(0, 0, .6, .6);
+  box-shadow: 0 12px 12px rgba(0, 0, .6, .6);
 
-    }
+}
 
-    #tag_cloud {
-      padding: 2px;
-      padding-left: 5px;
-      overflow-x: hidden;
-      overflow-y: hidden;
+#tag_cloud {
+  padding: 2px;
+  padding-left: 5px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
 
 
-    }
+}
 
-    #tag_cloud .chip{
-      font-family: 'Capriola, sans-serif';font-size: 12px;
-      /*font-family: "DejaVu Sans",Verdana, Tahoma, Arial, sans-serif;*/
-      font-weight: 400;
-      font-size: inherit;
-      line-height: 28px;
-      border: 1px solid #00b8d4;
-      background-color: white;
-      height: 28px;
-      color: #00b8d4 ;
-      margin-bottom: 5px;
-      margin-right: 2px;
-      padding-left: 5px;
-      padding-right: 5px;
-      padding-bottom: 32px;
-    }
-    #tag_cloud .chip:hover{
-     background-color: #00b8d4;
-     color: #ffffff;
-     z-index: 8000;
-     /*  background-color: #e0f7fa ;*/
+#tag_cloud .chip{
+  font-family: 'Capriola, sans-serif';font-size: 12px;
+  /*font-family: "DejaVu Sans",Verdana, Tahoma, Arial, sans-serif;*/
+  font-weight: 400;
+  font-size: inherit;
+  line-height: 28px;
+  border: 1px solid #00b8d4;
+  background-color: white;
+  height: 28px;
+  color: #00b8d4 ;
+  margin-bottom: 5px;
+  margin-right: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 32px;
+}
+#tag_cloud .chip:hover{
+ background-color: #00b8d4;
+ color: #ffffff;
+ z-index: 8000;
+ /*  background-color: #e0f7fa ;*/
 
-   }
-   #tag_cloud .chip a{
-    font-family: "DejaVu Sans",Verdana, Tahoma, Arial, sans-serif;
-    font-weight: 400;
-    color:#00b8d4;
-  }
-  #tag_cloud .chip a:hover{
-    font-family: "DejaVu Sans",Verdana, Tahoma, Arial, sans-serif;
-    font-weight: 400;
-    color:#ffffff;
-  }
+}
+#tag_cloud .chip a{
+  font-family: "DejaVu Sans",Verdana, Tahoma, Arial, sans-serif;
+  font-weight: 400;
+  color:#00b8d4;
+}
+#tag_cloud .chip a:hover{
+  font-family: "DejaVu Sans",Verdana, Tahoma, Arial, sans-serif;
+  font-weight: 400;
+  color:#ffffff;
+}
 
 /*#tag_cloud .chip a:hover{
   color:white;
@@ -313,17 +320,17 @@ margin-right: 10%;
 
 
 .car1.small.note .wrapper {
-  font-family: sans;
+  font-family:sans;
   margin: auto 0 auto;
 }
 
 /* Note styles */
 .car1.small.note .note-wrap {
   font-size: 24px;
-  font-family: Englebert, Arial;
-  color: #777471;
-  line-height: 28px;
-  text-align: center;
+font-family: Englebert, Arial;
+color: #777471;
+line-height: 28px;
+text-align: center;
   width: 235px;
   min-height: 235px;
   padding: 11px;
@@ -371,16 +378,16 @@ margin-right: 10%;
   transform: rotate(-2deg);
 }
 aside.note-wrap.note-yellow div p#note1{
-  text-transform: uppercase;
-  margin: 0px;
-  margin-top: 10px;
-  font-weight: bold;
-  font-family: 'Lato, sans-serif';
+text-transform: uppercase;
+margin: 0px;
+margin-top: 10px;
+font-weight: bold;
+font-family: 'Lato, sans-serif';
 }
 aside.note-wrap.note-yellow div p#note1cont{
 
-  margin: 0px;
-  margin-top: 4px;    
+margin: 0px;
+margin-top: 4px;    
 }
 
 
@@ -407,28 +414,25 @@ aside.note-wrap.note-yellow div p#note1cont{
 
 div.card.small.tag div.card-action.center a.waves-effect.waves-light.cyan.btn.modal-trigger{
 
-  border-radius: 4%;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 0.5rem;
+border-radius: 4%;
+height: 30px;
+line-height: 30px;
+padding: 0 0.5rem;
 }
 
 div.card.small.userf div.card-action.center a.waves-effect.waves-light.cyan.btn.modal-trigger{
-  border-radius: 4%;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 0.5rem;
+border-radius: 4%;
+height: 30px;
+line-height: 30px;
+padding: 0 0.5rem;
 }
 
   /*.card.small.note:hover {
-
   box-shadow: 0 12px 12px rgba(0, 0, .6, .6);
-
   }*/
 
 /*.input-field input[type="search"]{
   background-color: white;
-
 }
 nav .input-field label i {
   color: rgba(53, 38, 38, 0.7);

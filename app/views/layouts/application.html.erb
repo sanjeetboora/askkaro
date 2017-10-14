@@ -57,7 +57,7 @@
     font-size: 14px;
     transition: width .3s ease;
     margin-bottom: 0px;
-margin-top: 3%;
+    margin-top: 3%;
   }
   .search-wrapper .search-input:focus {
     outline: none;
@@ -81,26 +81,30 @@ margin-top: 3%;
 </style>
 
 
+<div class="navbar">
+
   <section class="navigation">
     <div class="nav-container hide-on-med-and-down">
 
       <div class="brand">
         <a href="/"><div class="image-logo1"></div></a>
+        <a href="/"><div class="image-name1"></div></a>
       </div>
       <nav id="mininav">   
         <ul class="nav-list">
-         
+          <li>
+            <a href="#!">Home</a>
+          </li>
           <li> <div class="search-wrapper">
 
            <form action="/home/index" method="get">
             <!-- <input class="search-input" placeholder="SEARCH" type="text" /> -->
-
-             <%= text_field_tag :search, params[:search],:class=>'search-input',:placeholder=>'Search' %>
+            <%= text_field_tag :search, params[:search],:class=>'search-input',:placeholder=>'Search' %>
 
 
             <svg width="13px" height="13px" class="search-icon" viewBox="0 0 13 13">
               <path fill="#999999" d="M12,13a1,1,0,0,1-.7-.3L8.62,10A5.5,5.5,0,1,1,10,8.62l2.68,2.68A1,1,0,0,1,12,13ZM5.5,2A3.5,3.5,0,1,0,9,5.5,3.5,3.5,0,0,0,5.5,2Z"/>
-</svg>
+            </svg>
           </form>
 
 
@@ -339,9 +343,9 @@ margin-top: 3%;
             <div class="chip">
              <!--          <i class="material-icons tagicon">add</i> -->
              <% if user.follow_string(current_user.id,user.id)== true%>
-             <%= link_to('Unfollow', user_follow_path(user), remote:true,method: :post,class: "follow1_#{user.id}") %>
+              <%= link_to('Unfollow', user_follow_path(user), remote:true,method: :post,class: "follow1_#{user.id}") %>
              <%else%>
-             <%= link_to('follow', user_follow_path(user), remote:true,method: :post,class: "follow1_#{user.id}") %>
+              <%= link_to('follow', user_follow_path(user), remote:true,method: :post,class: "follow1_#{user.id}") %>
              <%end%>
 
            </div>
@@ -355,7 +359,7 @@ margin-top: 3%;
        <!--  -->
      </div>
      <div class="card-action center">
-      <a class="waves-effect waves-light cyan btn modal-trigger" href="/users_list">SEE ALL</a>
+     <a class="waves-effect waves-light cyan btn modal-trigger" href="/users_list">SEE ALL</a>
       <!-- <a href="./tags_list">SEE ALL</a> -->
     </div>
   </div>
@@ -504,10 +508,7 @@ margin-top: 3%;
 
 <script>
  $(".button-collapse").sideNav();
-
-
  $(document).ready(function(){
-
   $('.dropdown-button').dropdown({
    inDuration: 300,
    outDuration: 225,
@@ -520,7 +521,6 @@ margin-top: 3%;
    }
    );
 // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-
  $('#modal2').on('click', function() {
       });
  $('#modal2').modal({
@@ -552,7 +552,6 @@ $('#modaltag').modal({
       
 });
 $('#modaltag').modal('open');
-
 $('#modaltag').modal('close');
 $('#modaladdnote').modal({
    dismissible: true, // Modal can be dismissed by clicking outside of the modal
@@ -564,7 +563,6 @@ $('#modaladdnote').modal({
       
 });
 $('#modaladdnote').modal('open');
-
 $('#modaladdnote').modal('close');
  $('#modaleachnote').on('click', function() {
       });
@@ -577,8 +575,6 @@ $('#modaleachnote').modal({
       endingTop: '10%', // Ending top style attribute
       
 });
-
-
 $('#modalshownote').modal({
   dismissible: true, // Modal can be dismissed by clicking outside of the modal
       opacity: 0.2, // Opacity of modal background
@@ -588,14 +584,9 @@ $('#modalshownote').modal({
       endingTop: '10%', // Ending top style attribute
 });
 $('#modalshownote').modal('open');
-
 $('#modalshownote').modal('close');
-
 $('.tooltipped').tooltip({delay: 50});
-
 });
-
-
   $('.modal').modal({
       dismissible: true, // Modal can be dismissed by clicking outside of the modal
       opacity: 0.2, // Opacity of modal background
@@ -606,12 +597,10 @@ $('.tooltipped').tooltip({delay: 50});
       
     }
   );
-
 </script>
 
 <!-- for dropdown  -->
 <script type="text/javascript">
-
   (function($) { // Begin jQuery
   $(function() { // DOM ready
     // If a link has a dropdown, add sub menu toggle.
@@ -651,22 +640,17 @@ $('.tooltipped').tooltip({delay: 50});
         liElement.append(data[i].actor+data[i].action+data[i].notifiable.type);
       //                    liElement.append(data[i].notifiable.type);
     }
-
   },
   error: function(){
     console.log("some error");
     console.log(arguments);
   }
-
 });
 </script>
 <script type="text/javascript">
-
-
 //in case you want to think about touch devices...I guess thats cool.
 var toggle = true;
 $('.mobile-dropdown').on('click', function(){
-
   alert('oh yeahh');
   if(toggle===true){
     $(this).addClass('active-drop');
@@ -678,12 +662,9 @@ $('.mobile-dropdown').on('click', function(){
     alert('turned off');
   }
 })
-
-
 </script>
 </body>
 
 
 
 </html>
-
