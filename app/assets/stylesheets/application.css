@@ -18,7 +18,7 @@
  @charset "UTF-8";
  body{
   background-color: #E6ECF0;
-  width: 94vw;
+  width: 100vw;
   height: 100vh;
   margin: auto;
 }
@@ -135,12 +135,12 @@ nav#small-device-nav {
 
 
 html body div#mithu.container div.col.s12.m12.l4.left.taguser{
-  height: 595px;
-  width: 22%;
-  margin-top: 53px;
-  padding-left: 15px;
-  margin-left: -35px;
-  margin-right: 35px;
+ height: 595px;
+width: 22%;
+margin-top: 6%;
+padding-left: 15px;
+margin-left: -12%;
+margin-right: 10%;
 }
 .card.small.userf {
   height: 595px;
